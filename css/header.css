@@ -1,0 +1,73 @@
+/* Header styling */
+header {
+  position: fixed;            /* Stays on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;    /* Transparent background */
+  z-index: 1000;
+  padding: 5px 25px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  height: 135px;  /* Adjust size */
+}
+
+/* Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0px 668px 5px 0px;
+  font-size: 15px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;                /* White text */
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: orange;              /* Highlight color */
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(34,34,34,0.9);
+  list-style: none;
+  display: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 150px;
+}
+
+.dropdown li {
+  padding: 8px 15px;
+}
+
+.dropdown li a {
+  color: #fff;
+  font-weight: normal;
+}
+
+.nav-links li:hover .dropdown {
+  display: block;
+}
