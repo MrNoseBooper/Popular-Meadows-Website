@@ -26,8 +26,9 @@ header {
   display: flex;
   gap: 30px;
   margin: 0;
-  padding: 0px 668px 5px 0px;
+  padding: 0px 720px 5px 0px;
   font-size: 15px;
+  font-family: "Arial", sans-serif;
 }
 
 .nav-links li {
