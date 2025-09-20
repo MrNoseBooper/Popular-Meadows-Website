@@ -1,26 +1,48 @@
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Hero Section */
 .hero {
-    height: 100vh; /* Full viewport height */
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('../assets/Header_Pic1.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("../assets/Header_Pic1.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
 }
 
-.content {
-    background-color: white; /* Default white bg for everything else */
-    padding: 50px;
-    color: black;
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.hero h2 span {
+  color: orange;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 20px;
 }
